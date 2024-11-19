@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.EventSystems; // Required for PointerEventData
 
 public class ButtonGazeTrigger : MonoBehaviour
 {
