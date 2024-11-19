@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class ButtonGazeTrigger : MonoBehaviour
 {
@@ -14,18 +15,21 @@ public class ButtonGazeTrigger : MonoBehaviour
         }
     }
 
-    public void OnGazeEnter()
+    // Triggered on Gaze Enter
+    public void OnGazeEnter(BaseEventData eventData)
     {
         isGazing = true;
         Debug.Log("Gaze entered!");
     }
 
-    public void OnGazeExit()
+    // Triggered on Gaze Exit
+    public void OnGazeExit(BaseEventData eventData)
     {
         isGazing = false;
         Debug.Log("Gaze exited!");
     }
 
+    // Play the animation
     public void PlayAnimation()
     {
         if (animator != null)

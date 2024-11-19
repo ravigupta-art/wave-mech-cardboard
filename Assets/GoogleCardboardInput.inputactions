@@ -20,7 +20,7 @@
                     "name": "",
                     "id": "eac5960f-de21-40aa-ad24-1900bc0387f6",
                     "path": "<XRController>{RightHand}/{PrimaryTrigger}",
-                    "interactions": "Press",
+                    "interactions": "Press(behavior=2)",
                     "processors": "",
                     "groups": "",
                     "action": "Submit",
